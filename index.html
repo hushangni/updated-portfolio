@@ -5,121 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="node_modules/aos/dist/aos.js"></script>
 </head>
 <body>
 
-    <header>
+    <header id="top">
         <div class="wrapper">
             <nav>
                 <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about</a></li>
+                    <li><a href="#works">works</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
             <h1 class="sr-only">Shangni Hu</h1>
-            <h2>Hey, I'm <span class="name">shang</span> a developer <a class="role" target="_blank" rel="noopener" href="https://www.shopify.com">@shopify</a>, an instructor <a href="https://www.junocollege.com" target="_blank" rel="noopener" class="role">@junocollege</a> and a mentor <a href="https://www.mondaygirl.ca" target="_blank" rel="noopener" class="role">@mondaygirl</a></h2>
+            <h2>Hey, I'm <span class="name">shang<span class="line-1"></span><span class="line-2"></span><span class="line-3"></span></span> a software devloper, an instructor <a href="https://www.junocollege.com" target="_blank" rel="noopener" class="role">@junocollege</a> and a mentor <a href="https://www.mondaygirl.ca" target="_blank" rel="noopener" class="role">@mondaygirl</a></h2>
         </div>
     </header>
 
     <main>
         <div class="wrapper">
-            <h2>The Works</h2>
-            <ul class="works">
-                <li class="work">
-                    <div class="work-details">
-                        <h3>Shopify</h3>
-                        <ul class="skills-used">
-                            <li>Development (Mobile)</li>
-                            <li>UX Collaboration</li>
-                            <li>App Launch</li>
-                        </ul>
-                        <p class="duration">Mar 2022 - Present</p>
-                    </div>
-                    <div class="project-preview">
-                        <div class="preview-header">
-                            <h4>Balance</h4>
-                            <a href="https://www.shopify.com/balance" class="project-link" target="_blank" rel="noopener"><img src="" alt=""></a>
+            <section class="works" id="works">
+                <h2>The Works</h2>
+                <ul class="works">
+                    <hr data-aos="zoom-in-right">
+                    <li class="work">
+                        <div class="work-details">
+                            <h3>Shopify</h3>
+                            <ul class="skills-used">
+                                <li>Development (Mobile)</li>
+                                <li>UX Collaboration</li>
+                                <li>App Launch</li>
+                            </ul>
+                            <p class="duration">Mar 2022 - Present</p>
                         </div>
-                        <div class="project-pic">
-                            <a href="https://www.shopify.com/balance" target="_blank" rel="noopener">
-                                <img src="./assets/balance.jpg" alt="">
-                            </a>
+                        <div class="project-preview">
+                            <div class="preview-header">
+                                <div class="project-heading-container">
+                                    <h4>Balance</h4>
+                                    <img class="arrow" src="./assets/arrow.svg" alt="">
+                                </div>
+                                <a href="https://www.shopify.com/balance" class="project-link" target="_blank" rel="noopener"><img src="" alt=""></a>
+                            </div>
+                            <div class="project-pic">
+                                <a href="https://www.shopify.com/balance" target="_blank" rel="noopener">
+                                    <img src="./assets/balance.jpg" alt="">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="work">
-                    <div class="work-details">
-                        <h3>Wealthsimple</h3>
-                        <ul class="skills-used">
-                            <li>Development (Mobile)</li>
-                            <li>Development (Web)</li>
-                            <li>Development (Back-End)</li>
-                            <li>User Interviews</li>
-                        </ul>
-                        <p class="duration">Sept 2020 - Mar 2022</p>
-                    </div>
-                    <div class="project-preview">
-                        <div class="preview-header">
-                            <h4>Cash</h4>
-                            <a href="https://www.wealthsimple.com/en-ca/spend" class="project-link" target="_blank" rel="noopener"><img src="" alt=""></a>
+                    </li>
+                    <hr data-aos="zoom-in-right">
+                    <li class="work">
+                        <div class="work-details">
+                            <h3>Wealthsimple</h3>
+                            <ul class="skills-used">
+                                <li>Development (Mobile)</li>
+                                <li>Development (Web)</li>
+                                <li>Development (Back-End)</li>
+                                <li>User Interviews</li>
+                            </ul>
+                            <p class="duration">Sept 2020 - Mar 2022</p>
                         </div>
-                        <div class="project-pic">
-                            <a href="https://www.wealthsimple.com/en-ca/spend" target="_blank" rel="noopener">
-                                <img src="./assets/wealthsimple-cash.png" alt="">
-                            </a>
+                        <div class="project-preview">
+                            <div class="preview-header">
+                                <div class="project-heading-container">
+                                    <h4>Cash</h4>
+                                    <img class="arrow" src="./assets/arrow.svg" alt="">
+                                </div>
+                                <a href="https://www.wealthsimple.com/en-ca/spend" class="project-link" target="_blank" rel="noopener"><img src="" alt=""></a>
+                            </div>
+                            <div class="project-pic">
+                                <a href="https://www.wealthsimple.com/en-ca/spend" target="_blank" rel="noopener">
+                                    <img src="./assets/wealthsimple-cash.png" alt="">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="work">
-                    <div class="work-details">
-                        <h3>Klick Health</h3>
-                        <ul class="skills-used">
-                            <li>Development (Tablet)</li>
-                            <li>Development (Web)</li>
-                            <li>Development (Email)</li>
-                        </ul>
-                        <p class="duration">Jan 2020 - Sept 2020</p>
-                    </div>
-                    <div class="project-preview">
-                        <div class="preview-header">
-                            <h4>Nurtec</h4>
-                            <a href="https://www.nurtec.com/" target="_blank" rel="noopener" class="project-link"><img src="" alt=""></a>
+                    </li>
+                    <hr data-aos="zoom-in-right">
+                    <li class="work">
+                        <div class="work-details">
+                            <h3>Klick Health</h3>
+                            <ul class="skills-used">
+                                <li>Development (Tablet)</li>
+                                <li>Development (Web)</li>
+                                <li>Development (Email)</li>
+                            </ul>
+                            <p class="duration">Jan 2020 - Sept 2020</p>
                         </div>
-                        <div class="project-pic">
-                            <a href="https://www.nurtec.com/" target="_blank" rel="noopener">
-                                <img src="./assets/nurtec.jpeg" alt="">
-                            </a>
+                        <div class="project-preview">
+                            <div class="preview-header">
+                                <div class="project-heading-container">
+                                    <h4>Nurtec</h4>
+                                    <img class="arrow" src="./assets/arrow.svg" alt="">
+                                </div>
+                                <a href="https://www.nurtec.com/" target="_blank" rel="noopener" class="project-link"><img src="" alt=""></a>
+                            </div>
+                            <div class="project-pic">
+                                <a href="https://www.nurtec.com/" target="_blank" rel="noopener">
+                                    <img src="./assets/nurtec.jpeg" alt="">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="work">
-                    <div class="work-details">
-                        <h3>Juno</h3>
-                        <ul class="skills-used">
-                            <li>Develoment (Web)</li>
-                            <li>Content Creation</li>
-                            <li>Workshop Instruction</li>
-                        </ul>
-                        <p class="duration">July 2019 - Dec 2019</p>
-                    </div>
-                    <div class="project-preview">
-                        <div class="preview-header">
-                            <h4>Javascript 101</h4>
-                            <a href="https://junocollege.com/" target="_blank" rel="noopener" class="project-link"><img src="" alt=""></a>
+                    </li>
+                    <hr data-aos="zoom-in-right">
+                    <li class="work">
+                        <div class="work-details">
+                            <h3>Juno</h3>
+                            <ul class="skills-used">
+                                <li>Development (Web)</li>
+                                <li>Content Creation</li>
+                                <li>Workshop Instruction</li>
+                            </ul>
+                            <p class="duration">July 2019 - Dec 2019</p>
                         </div>
-                        <div class="project-pic"><a href="https://junocollege.com/" target="_blank" rel="noopener"><img src="./assets/javasript101.jpg" alt=""></a></div>
-                    </div>
-                </li>
-            </ul>
+                        <div class="project-preview">
+                            <div class="preview-header">
+                                <div class="project-heading-container">
+                                    <h4>JavaScript 101</h4>
+                                    <img class="arrow" src="./assets/arrow.svg" alt="">
+                                </div>
+                                <a href="https://junocollege.com/" target="_blank" rel="noopener" class="project-link"><img src="" alt=""></a>
+                            </div>
+                            <div class="project-pic"><a href="https://junocollege.com/" target="_blank" rel="noopener"><img src="./assets/javascript.jpg" alt=""></a></div>
+                        </div>
+                    </li>
+                    <hr data-aos="zoom-in-right">
+                </ul>
+            </section>
+
+            <section class="contact">
+                <h2 id="contact">Find Me</h2>
+
+                <div class="contact-container">
+                    <p>I am always happy to chat! Whether its about a new opportunity, something you're looking to build, or just to jam in general.</p>
+
+                    <ul class="contact-list">
+                        <li><a href="https://www.linkedin.com/in/shangni-hu/" target="_blank" rel="noopener" >
+                            <p>LinkedIn</p><img class="arrow" src="./assets/arrow.svg" alt=""></a></li>
+                        <li><a href="https://github.com/hushangni" target="_blank" rel="noopener" ><p>Github</p><img class="arrow" src="./assets/arrow.svg" alt=""></a></li>
+                        <li><a href="./assets/Resume-ShangniHu.pdf" target="_blank" rel="noopener">
+                                <p>Resume</p><img class="arrow" src="./assets/arrow.svg" alt="">
+                            </a></li>
+                    </ul>
+                </div>
+            </section>
+            <hr data-aos="zoom-in-right">
+            <div class="back-to-top">
+                <a href="#top"><img class="arrow" src="./assets/arrow.svg" alt=""></a>
+            </div>
         </div>
     </main>
-    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
