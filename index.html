@@ -13,7 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="node_modules/aos/dist/aos.js"></script>
+    <script rel="preconnect" src="node_modules/aos/dist/aos.js"></script>
+    <script rel="preconnect" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -164,7 +165,10 @@
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>    AOS.init();
+    <script>    
+    $(document).ready(() => {
+        
+        AOS.init();
 
         $("a").on('click', function (event) {
             if (this.hash !== "") {
@@ -177,6 +181,8 @@
                     window.location.hash = hash;
                 });
             }
-        });</script>
+        });
+    });
+    </script>
 </body>
 </html>
