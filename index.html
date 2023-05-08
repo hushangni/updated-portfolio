@@ -6,15 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shang</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
-    <script rel="preconnect" src="node_modules/aos/dist/aos.js"></script>
-    <script rel="preconnect" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -163,26 +160,5 @@
             </div>
         </div>
     </main>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>    
-    $(document).ready(() => {
-        
-        AOS.init();
-
-        $("a").on('click', function (event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                const hash = this.hash;
-
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-                    window.location.hash = hash;
-                });
-            }
-        });
-    });
-    </script>
 </body>
 </html>
