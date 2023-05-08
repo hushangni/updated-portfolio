@@ -88,6 +88,10 @@ hr {
     margin: 50px 0;
 }
 
+.arrow {
+    transition: 0.3s;
+}
+
 /****** HEADER STYLES ******/
 header {
     background-color: var(--green);
@@ -197,6 +201,11 @@ header ul a {
 }
 
 /****** PROJECT STYLES ******/
+.project-preview:hover .arrow,
+.project-preview:focus-within .arrow {
+    transform: rotate(145deg);
+}
+
 .work {
     display: flex;
     justify-content: space-between;
@@ -269,7 +278,6 @@ header ul a {
     transform: rotate(145deg);
     height: 40px;
     width: 40px;
-    transition: 0.3s;
 }
 
 .contact-list a:hover .arrow,
