@@ -100,6 +100,19 @@ header {
     font-family: var(--primaryFont);
 }
 
+.heading-1,
+.heading-2,
+.heading-3 {
+    animation: fadeIn 1s ease-in both;
+    opacity: 0;
+    display: block;
+}
+
+.heading-1 {animation-delay: 0.3s;}
+.heading-2 {animation-delay: 1.5s;}
+.heading-3 {animation-delay: 2.5s;}
+
+
 .name {
     position: relative;
     width: fit-content;
@@ -119,7 +132,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    animation: line 0.7s 3 1.3s;
+    animation: line 0.7s 3 5s;
 }
 
 .line-1 {
@@ -305,6 +318,7 @@ header ul a {
     transform: translateY(-10px);
 }
 
+/****** ANIMATIONS ******/
 @keyframes line {
     from {
         opacity: 0;
@@ -312,6 +326,18 @@ header ul a {
 
     to {
         opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
